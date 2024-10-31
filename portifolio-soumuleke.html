@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="artistas.html" class="button voltar">Voltar</a>
+    <h1>Portfólio do Artista</h1>
+    <div class="gallery">
+      <img src="./src/image/jao.jpg" alt="Imagem 1" onclick="openModal(this.src)">
+      <img src="./src/image/jao.jpg" alt="Imagem 2" onclick="openModal(this.src)">
+      <img src="./src/image/jao.jpg" alt="Imagem 3" onclick="openModal(this.src)">
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  </div>
+
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

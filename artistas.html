@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistas</title>
+  <link rel="stylesheet" href="./src/style.css">
+  
+</head>
+<body>
+  <div class="container">
+
+    <h1>Lista de Artistas</h1>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Pesquisar artista..." onkeyup="filterArtists()">
+    </div>
+
+    <ul id="artistList" class="artist-list">
+      <!-- Cada artista direciona para uma página de portfólio diferente -->
+      <li><a href="portifolio-soumuleke.html">Sou Muleke</a></li>
+      <li><a href="portifolio-kauedamazzio.html">Kauê Damazzio </a></li>
+      <li><a href="portifolio-emersonsampa.html">Emerson Sampa </a></li>
+      <li><a href="portifolio-libnawinnie.html">Libna winnie</a></li>
+      <!-- Adicione mais artistas e páginas conforme necessário -->
+    </ul>
+    <a href="index.html" class="button voltar">Voltar</a>
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
